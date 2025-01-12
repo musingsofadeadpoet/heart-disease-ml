@@ -27,28 +27,30 @@ The data processing includes handling missing values by replacing these with NaN
 
 ## Model Training and Evaluation
 The ModelTrainer class supports Logistic Regression and Random Forest Classifier.
-### Classification report:
+### Classification report
 <p align="center">
   <img width="496" alt="Screenshot 2025-01-13 at 1 13 53 AM" src="https://github.com/user-attachments/assets/65d44189-1229-4b48-91f4-92bbd9b4f16b" />
 </p>
-### Confusion matrix:
+
+### Confusion matrix
 <p align="center">
   <img width="542" alt="Screenshot 2025-01-13 at 1 14 49 AM" src="https://github.com/user-attachments/assets/88beed49-8c52-4725-8270-4000f6ef02d8" />
 </p>
-### Precision recall curve:
+
+### Precision recall curve
 <p align="center">
   <img width="639" alt="Screenshot 2025-01-13 at 1 16 14 AM" src="https://github.com/user-attachments/assets/c5781ef4-07fb-428d-a85f-df13d496fc18" />
 </p>
 
 The model achieved an accuracy of 96%. The precision recall curve confirms the robustness of the model in predicting positive cases. However, the confusion matrix reveals that the model struggles with negative cases due to data imbalance. This is one of the main future improvements that I am taking into consideration. 
 ## Future Improvements
-### Data Augmentation:
+### Data Augmentation
 The current dataset suffers from a significant imbalance between the positive and negative classes. This impacts the model's ability to correctly classify the minority class, as evidenced by the low precision and recall for the "No Disease" class. A possible solution would be using data augmentation techniques, such as oversampling using SMOTE (Synthetic Minority Oversampling Technique) or generating synthetic data using GANs (Generative Adversarial Networks). 
 
-### Model Experimentation:
+### Model Experimentation
 While the project primarily uses logistic regression and random forest models, experimenting with other algorithms such as Support Vector Machines (SVM) can be effective for high-dimensional data and yield better classification boundaries. Gradient Boosting models, such as XGBoost or LightGBM, often outperform traditional models by leveraging ensemble techniques to reduce bias and variance. Hyperparameter tuning via Grid Search or Bayesian Optimization should accompany these experiments to maximize each model's potential.
 
-### Explainability:
+### Explainability
 As machine learning models are increasingly used in high-stakes domains like healthcare, interpretability becomes critical. Tools like SHAP (SHapley Additive exPlanations) and LIME (Local Interpretable Model-agnostic Explanations) provide insights into individual predictions by quantifying the contribution of each feature, which gives the model more transparency and trustworthiness. 
 
 ## Web Application
