@@ -56,13 +56,11 @@ As machine learning models are increasingly used in high-stakes domains like hea
 ## Web Application
 In this project, I also deployed an app that makes use of the model, where users can input clinical data and receive predictions. You can check out the app by:
 1. Navigate to the `webapp/` directory.
-2. Run `app.py`:
- ```bash
- python webapp/app.py
-
-3. Paste 'http://127.0.0.1:5000/' to see the app live!
+2. Run `app.py`
+3. Paste 'http://127.0.0.1:5000/' on your browser to see the app live!
 
 It should look like the following. 
+<img width="641" alt="Screenshot 2025-01-13 at 2 28 22 AM" src="https://github.com/user-attachments/assets/1e0655e2-5d88-40ba-b536-dc1e5fbbb0f5" />
 
 
 
