@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Heart Disease Prediction</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Heart Disease Prediction</h1>
+        <form action="/predict" method="POST">
+            <label>Age: <input type="number" name="age" required></label><br>
+            <label>Sex: <input type="number" name="sex" required></label><br>
+            <label>Chest Pain Type: <input type="number" name="cp" required></label><br>
+            <label>Resting Blood Pressure: <input type="number" name="trestbps" required></label><br>
+            <label>Cholesterol: <input type="number" name="chol" required></label><br>
+            <label>Fasting Blood Sugar: <input type="number" name="fbs" required></label><br>
+            <label>Resting ECG: <input type="number" name="restecg" required></label><br>
+            <label>Max Heart Rate: <input type="number" name="thalach" required></label><br>
+            <label>Exercise Induced Angina: <input type="number" name="exang" required></label><br>
+            <label>Oldpeak: <input type="number" name="oldpeak" required></label><br>
+            <label>Slope: <input type="number" name="slope" required></label><br>
+            <label>CA: <input type="number" name="ca" required></label><br>
+            <label>Thal: <input type="number" name="thal" required></label><br>
+            <button type="submit">Predict</button>
+        </form>
+        <p>{{ prediction_text }}</p>
+    </div>
+</body>
+</html>
