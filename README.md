@@ -27,17 +27,17 @@ The data processing includes handling missing values by replacing these with NaN
 
 ## Model Training and Evaluation
 The ModelTrainer class supports Logistic Regression and Random Forest Classifier.
-### Classification report
+### Classification Report
 <p align="center">
   <img width="496" alt="Screenshot 2025-01-13 at 1 13 53 AM" src="https://github.com/user-attachments/assets/65d44189-1229-4b48-91f4-92bbd9b4f16b" />
 </p>
 
-### Confusion matrix
+### Confusion Matrix
 <p align="center">
   <img width="542" alt="Screenshot 2025-01-13 at 1 14 49 AM" src="https://github.com/user-attachments/assets/88beed49-8c52-4725-8270-4000f6ef02d8" />
 </p>
 
-### Precision recall curve
+### Precision Recall Curve
 <p align="center">
   <img width="639" alt="Screenshot 2025-01-13 at 1 16 14 AM" src="https://github.com/user-attachments/assets/c5781ef4-07fb-428d-a85f-df13d496fc18" />
 </p>
