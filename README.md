@@ -1,8 +1,8 @@
 # Heart Disease Prediction with Machine Learning 🫀
-This project is an end-to-end machine learning pipeline aiming to predict the likelihood of heart disease based on clinical data. 
+This project is an end-to-end machine learning pipeline that predicts the likelihood of heart disease based on clinical data. 
 
 ## Overview
-Cardiovascular diseases have long been a leading cause of mortality worldwide. In this project, I aim to use machine learning techniques to predict the presence of heart disease based on key health indicators. The dataset used is the Cleveland Heart Disease dataset taken from the UCI Machine Learning Repository (https://archive.ics.uci.edu/dataset/45/heart+disease).
+Cardiovascular diseases have long been a leading cause of mortality worldwide. In this project, I use machine learning techniques to predict the presence of heart disease based on key health indicators. The dataset used is the Cleveland Heart Disease dataset taken from the UCI Machine Learning Repository (https://archive.ics.uci.edu/dataset/45/heart+disease).
 
 ## Data Description
 The Cleveland dataset contains 14 attributes and one target column indicating the presence or absence of heart disease. Key features include:
