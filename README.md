@@ -59,11 +59,10 @@ In this project, I also deployed an app that makes use of the model, where users
 2. Run `app.py`:
  ```bash
  python webapp/app.py
+
 3. Paste 'http://127.0.0.1:5000/' to see the app live!
 
-It should look like this:
-<p align="center">
-  <img width="639" alt="Screenshot 2025-01-13 at 2 26 23 AM" src="https://github.com/user-attachments/assets/9e5bb96d-66fa-4bd2-bc0f-5b005901ac79" />
-</p>
+It should look like the following. 
+
 
 
