@@ -88,43 +88,21 @@ preprocessor = DataPreprocessor(file_path)
 data = preprocessor.load_data()
 X_train, X_test, y_train, y_test, scaler = preprocessor.preprocess_data()
 
-# Train and evaluate model
+# train and evaluate model
 trainer = ModelTrainer(model_type='logistic')
 model = trainer.build_model()
 model = trainer.train(X_train, y_train)
 acc, report = trainer.evaluate(X_test, y_test)
 
-# Save model and scaler
 joblib.dump(model, './models/heart_disease_model.pkl')
 joblib.dump(scaler, './models/scaler.pkl')
 
-# Visualize results
 y_pred = model.predict(X_test)
 plot_confusion_matrix(
     y_test, y_pred,
     classes=["No Disease", "Disease"],
     output_path="./results/confusion_matrix.png"
 )
-
-# Precision-Recall Curve
-if hasattr(model, "predict_proba"):  # Ensure the model supports probability predictions
-    y_scores = model.predict_proba(X_test)[:, 1]  # Get probabilities for the positive class
-    plot_precision_recall_curve(
-        y_test, y_scores,
-        output_path="./results/precision_recall_curve.png"
-    )
-else:
-    print("Model does not support probability predictions for precision-recall curve.")
-
-# Feature Importance (only applicable for tree-based models like Random Forest)
-if hasattr(model, "feature_importances_"):  # Check if model has feature_importances_
-    feature_names = data.columns[:-1]  # Exclude the target column
-    plot_feature_importance(
-        model, feature_names,
-        output_path="./results/feature_importance.png"
-    )
-else:
-    print("Feature importance visualization is not applicable for this model type.")
 
 print(f"Model Accuracy: {acc}")
 print("Classification Report:")
