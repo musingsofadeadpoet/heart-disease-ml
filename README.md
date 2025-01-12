@@ -1,4 +1,4 @@
-# Heart Disease Prediction with Machine Learning
+# Heart Disease Prediction with Machine Learning 🫀
 This project is an end-to-end machine learning pipeline aimed at predicting the likelihood of heart disease based on clinical data. 
 
 ## Overview
